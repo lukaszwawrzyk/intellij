@@ -17,6 +17,7 @@
   <vendor>Google</vendor>
 
   <depends>com.intellij.modules.clion</depends>
+  <depends>com.intellij.cidr.lang</depends>
   <depends>org.jetbrains.plugins.clion.test.google</depends>
 
   <extensions defaultExtensionNs="com.intellij">
@@ -32,6 +33,10 @@
 
   <extensions defaultExtensionNs="cidr.debugger">
     <languageSupport language="" implementationClass="com.google.idea.blaze.clwb.run.BlazeCidrDebuggerSupportFactory"/>
+  </extensions>
+
+  <extensions defaultExtensionNs="cidr.lang">
+    <testing.potentialTestHolderRootsProvider implementation="com.google.idea.blaze.clwb.index.test.TestSourcesIndexer"/>
   </extensions>
 
   <extensions defaultExtensionNs="com.google.idea.blaze">

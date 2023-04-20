@@ -152,9 +152,9 @@ http_archive(
     url = "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/clion/clion/2022.3/clion-2022.3.zip",
 )
 
-CLION_231_SHA = "db234643bbd7b09e2af45e589447c6a00a058744378641a36d818aaf7f76fcbf"
+CLION_231_SHA = "191eaa812062ebeb3d00c0433b429f1d149f012461551cd59207db40e26b7721"
 
-CLION_231_URL = "https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/clion/clion/2023.1/clion-2023.1.zip"
+CLION_231_URL = "file:///Users/lukasz/Downloads/CLion-231.8904.portable.zip"
 
 http_archive(
     name = "clion_2023_1",
